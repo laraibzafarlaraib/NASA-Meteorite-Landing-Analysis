@@ -28,31 +28,6 @@ This project performs a comprehensive analysis of NASA's Meteorite Landings data
 | **Data Visualization** | 20+ publication-quality charts with Matplotlib, Seaborn, and Plotly |
 | **Business Intelligence** | 3-page interactive Power BI dashboard with DAX measures |
 
----
-
-##  Key Findings
-
-1. **97% of cataloged meteorites were "Found"** (discovered after landing), only ~3% were witnessed falling — highlighting massive observational bias.
-
-2. **Antarctica is the #1 meteorite discovery site** — not because more land there, but because dark rocks stand out on white ice and are well-preserved.
-
-3. **Meteorite discoveries exploded after 1970** — driven by systematic Antarctic search programs (ANSMET) and Saharan expeditions.
-
-4. **Mass follows a log-normal distribution** — most meteorites are small (median ~30g), but outliers like Hoba (60,000 kg) skew the data enormously.
-
-5. **L-chondrites dominate** — ordinary chondrites (L, H, LL groups) make up ~80% of all classified meteorites.
-
-6. **Found meteorites are significantly heavier** than fallen ones (Mann-Whitney U test, p < 0.001) — larger fragments survive longer on the surface.
-
-7. **Northern Hemisphere records more sightings** (Fell) due to higher population density, but Southern Hemisphere dominates finds (Found) due to Antarctic programs.
-
-8. **Classification diversity has increased 5x** since 1950 — reflecting advances in meteoritics and analytical techniques.
-
-9. **Mass correlates weakly with latitude** — suggesting no strong geographic mass-selection bias beyond collection methodology.
-
-10. **The heaviest meteorites cluster in Africa** — the Hoba meteorite in Namibia (60 tonnes) remains the largest known meteorite on Earth.
-
----
 
 ##  Tech Stack
 
