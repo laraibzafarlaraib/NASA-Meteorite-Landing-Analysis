@@ -13,7 +13,7 @@
 
 ---
 
-## 🔭 Overview
+##  Overview
 
 This project performs a comprehensive analysis of NASA's Meteorite Landings dataset, combining **Python-based statistical analysis** with an **interactive Power BI dashboard** to uncover patterns in meteorite discoveries across time, geography, and physical properties.
 
@@ -30,7 +30,7 @@ This project performs a comprehensive analysis of NASA's Meteorite Landings data
 
 ---
 
-## 🔑 Key Findings
+##  Key Findings
 
 1. **97% of cataloged meteorites were "Found"** (discovered after landing), only ~3% were witnessed falling — highlighting massive observational bias.
 
@@ -54,7 +54,7 @@ This project performs a comprehensive analysis of NASA's Meteorite Landings data
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Category | Tools |
 |----------|-------|
@@ -68,7 +68,7 @@ This project performs a comprehensive analysis of NASA's Meteorite Landings data
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Property | Details |
 |----------|---------|
@@ -108,7 +108,7 @@ jupyter>=1.0.0
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Laraib Zafar**
 
