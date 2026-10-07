@@ -1,4 +1,4 @@
-# 🌠 NASA Meteorite Landing Analysis
+# NASA Meteorite Landing Analysis
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/)
@@ -6,25 +6,10 @@
 [![NASA](https://img.shields.io/badge/NASA-Open%20Data-E03C31?style=for-the-badge&logo=nasa&logoColor=white)](https://data.nasa.gov/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **End-to-end exploratory data analysis and interactive dashboard** on 45,000+ meteorite landings recorded by NASA & The Meteoritical Society — spanning over 1,000 years of extraterrestrial impacts.
+> **End-to-end exploratory data analysis and interactive dashboard** on 45,000+ meteorite landings recorded by NASA & The Meteoritical Society, spanning over 1,000 years of extraterrestrial impacts.
 
 <!-- Add a banner image or dashboard screenshot here -->
 <!-- ![Dashboard Preview](assets/dashboard_preview.png) -->
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Key Findings](#-key-findings)
-- [Tech Stack](#-tech-stack)
-- [Dataset](#-dataset)
-- [Project Structure](#-project-structure)
-- [Analysis Highlights](#-analysis-highlights)
-- [Power BI Dashboard](#-power-bi-dashboard)
-- [Getting Started](#-getting-started)
-- [Future Work](#-future-work)
-- [Author](#-author)
 
 ---
 
@@ -101,113 +86,13 @@ This project performs a comprehensive analysis of NASA's Meteorite Landings data
 | `id` | Integer | Unique identifier |
 | `nametype` | String | "Valid" or "Relict" |
 | `recclass` | String | Meteorite classification (e.g., L5, H6, Iron) |
-| `mass (g)` | Float | Mass in grams |
+| `mass` | Float | Mass in grams |
 | `fall` | String | "Fell" (witnessed) or "Found" (discovered) |
 | `year` | DateTime | Year of fall/find |
 | `reclat` | Float | Latitude |
 | `reclong` | Float | Longitude |
 | `GeoLocation` | String | Combined lat/long |
 
----
-
-## 📂 Project Structure
-
-```
-nasa-meteorite-analysis/
-│
-├── 📓 notebooks/
-│   └── nasa_meteorite_analysis.ipynb    # Main Kaggle notebook (full EDA)
-│
-├── 📊 powerbi/
-│   ├── meteorite_dashboard.pbix         # Power BI dashboard file
-│   ├── meteorite_theme.json             # Custom dark theme
-│   └── dashboard_guide.md              # Step-by-step build instructions
-│
-├── 📁 data/
-│   ├── raw/
-│   │   └── Meteorite_Landings.csv       # Original NASA dataset
-│   └── processed/
-│       └── meteorite_landings_cleaned.csv  # Cleaned & feature-engineered
-│
-├── 🖼 assets/
-│   ├── dashboard_page1.png              # Dashboard screenshots
-│   ├── dashboard_page2.png
-│   ├── dashboard_page3.png
-│   ├── geospatial_map.png               # Key visualization exports
-│   ├── temporal_analysis.png
-│   └── mass_distribution.png
-│
-├── 📄 README.md                         # This file
-├── 📄 LICENSE                           # MIT License
-└── 📄 requirements.txt                  # Python dependencies
-```
-
----
-
-## 📈 Analysis Highlights
-
-### 🗺 Geospatial Distribution
-Meteorite landings span all seven continents, with a striking concentration in **Antarctica** (systematic search programs), the **Sahara Desert** (dark rocks on sand), and **populated areas of Europe/Asia** (higher witness rates).
-
-<!-- ![Geospatial Map](assets/geospatial_map.png) -->
-
-### ⏰ Temporal Trends
-Discovery rates remained low until the 1970s, then surged exponentially — driven by the **Antarctic Search for Meteorites (ANSMET)** program and increased scientific interest.
-
-<!-- ![Temporal Analysis](assets/temporal_analysis.png) -->
-
-### ⚖️ Mass Distribution
-Mass follows a **log-normal distribution** spanning 8 orders of magnitude — from dust particles (<1g) to the 60-tonne Hoba meteorite.
-
-<!-- ![Mass Distribution](assets/mass_distribution.png) -->
-
----
-
-## 📊 Power BI Dashboard
-
-The interactive dashboard consists of **3 pages**:
-
-| Page | Focus | Key Visuals |
-|------|-------|-------------|
-| **Executive Overview** | High-level KPIs & global picture | KPI cards, world map, timeline, donut chart |
-| **Classification & Mass** | Deep dive into meteorite types | Treemap, bar charts, box plots |
-| **Geospatial Deep Dive** | Geographic patterns | Interactive map, continent comparison, scatter plots |
-
-### DAX Measures Created
-- Total Meteorites, Total Mass (MT), Average Mass (kg)
-- Fell/Found percentages
-- Year-over-Year growth rates
-- Conditional formatting rules
-
-> 📖 See [`powerbi/dashboard_guide.md`](powerbi/dashboard_guide.md) for step-by-step build instructions.
-
-<!-- ![Dashboard](assets/dashboard_preview.png) -->
-
----
-
-## 🚀 Getting Started
-
-### Option 1: Kaggle (Recommended)
-1. Go to the [Kaggle Notebook](YOUR_KAGGLE_LINK_HERE)
-2. Click **Copy & Edit** to run it yourself
-3. The dataset loads automatically from Kaggle
-
-### Option 2: Local Setup
-```bash
-# Clone the repo
-git clone https://github.com/laraibzafarlaraib/nasa-meteorite-analysis.git
-cd nasa-meteorite-analysis
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the notebook
-jupyter notebook notebooks/nasa_meteorite_analysis.ipynb
-```
 
 ### Requirements
 ```txt
@@ -220,17 +105,6 @@ scipy>=1.10.0
 scikit-learn>=1.2.0
 jupyter>=1.0.0
 ```
-
----
-
-## 🔮 Future Work
-
-- [ ] **Predictive modeling**: Classify meteorite type from mass and location features
-- [ ] **Clustering analysis**: K-Means/DBSCAN on geographic coordinates to find landing hotspots
-- [ ] **Time series forecasting**: Predict future discovery rates
-- [ ] **NLP on meteorite names**: Extract naming patterns and conventions
-- [ ] **Integration with asteroid tracking data**: Correlate landings with known asteroid orbits
-- [ ] **Streamlit web app**: Deploy an interactive version online
 
 ---
 
